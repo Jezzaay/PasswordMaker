@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightPrimary"
+    tools:context="com.jeremy.passwordmaker.MainActivity">
+
+    <TextView
+        android:id="@+id/NewPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/sample_text"
+        android:textIsSelectable="true"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418"
+        tools:textColor="@color/colorPrimaryText" />
+
+    <Button
+        android:id="@+id/button"
+        style="@android:style/Widget.Material.Button.Borderless.Colored"
+        android:layout_width="391dp"
+        android:layout_height="63dp"
+        android:text="@string/new_pass"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@+id/NewPass" />
+
+</android.support.constraint.ConstraintLayout>

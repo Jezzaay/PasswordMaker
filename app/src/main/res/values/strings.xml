@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Password Maker</string>
+    <string name="sample_text">Sample Text</string>
+    <string name="new_pass">New Password</string>
+</resources>
