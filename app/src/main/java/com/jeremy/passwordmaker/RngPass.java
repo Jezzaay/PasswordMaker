@@ -1,6 +1,7 @@
 package com.jeremy.passwordmaker;
 
 
+import java.util.Random;
 
 /**
  * Created by Jeremy on 20/06/2017.
@@ -22,11 +23,20 @@ public class RngPass {
     private String pass;
     private String newString;
 
-    public  String newPass(String password){
+    private int min = 9;
+    private int max = 20;
+
+   private int ranNumber;
+    public String newPass(String password){
     pass = "";
         newString = "";
 
-        for (int x = 0; x< 14; x++){
+        Random rando = new Random();
+
+        ranNumber = rando.nextInt((max - min ) + 1) + min;
+
+
+        for (int x = 0; x < ranNumber ; x++){
 
 
             int random  = (int)(Math.random() * 49 );
@@ -63,5 +73,8 @@ public class RngPass {
 
         return password = newString;
     }
+
+
+
 
 }
