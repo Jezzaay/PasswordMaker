@@ -9,5 +9,5 @@ This was just a fun development application. Stopped taking this any further.
 
 All work has been part of personal project. 
 
-# License
-MIT License. 
+
+ 
